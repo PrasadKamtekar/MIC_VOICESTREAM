@@ -4,26 +4,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#FFEAC5"> <!-- Light orange background -->
 
     <EditText
         android:id="@+id/ip_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Receiver IP Address"
-        android:inputType="text" />
+        android:hint="Enter IP address"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/custom_text_field"
+        android:textColor="#000"
+        android:textColorHint="#FF9800" />
+
 
     <Button
         android:id="@+id/btn_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start Sending"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btn_receive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start Receiving"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
 </LinearLayout>

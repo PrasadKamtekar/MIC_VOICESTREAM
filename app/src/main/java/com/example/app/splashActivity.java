@@ -21,7 +21,7 @@ public class splashActivity extends AppCompatActivity {
         VideoView videoView = findViewById(R.id.videoView);
 
 
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.splash);
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.s);
         videoView.setVideoURI(videoUri);
 
 
@@ -36,7 +36,7 @@ public class splashActivity extends AppCompatActivity {
                 startActivity(home);
                 finish(); // stack madhali activity pop karnyasathi  back karu tevha splash screen disali nahi pahije
             }
-        },500);
+        },3000);
 
     }
 }
